@@ -1,0 +1,78 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.fight-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+}
+
+.fight {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: calc(33.333% - 40px);
+  box-sizing: border-box;
+}
+
+.fight h2 {
+  color: #0056b3;
+  border-bottom: 2px solid #0056b3;
+  padding-bottom: 5px;
+  margin-top: 0;
+}
+
+.fight p {
+  margin: 5px 0;
+}
+
+.fight strong {
+  color: #444;
+}
+
+.fight p + p {
+  margin-top: 0;
+}
+
+.fight p:last-of-type {
+  margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+  .fight {
+    width: calc(50% - 30px);
+  }
+}
+
+@media (max-width: 600px) {
+  .fight {
+    width: calc(100% - 40px);
+  }
+
+  body {
+    padding: 10px;
+  }
+
+  .fight h2 {
+    font-size: 1.2em;
+  }
+}
